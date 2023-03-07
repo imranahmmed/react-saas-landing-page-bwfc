@@ -18,10 +18,10 @@ const Header = () => {
     return (
         <>
             <Div className='container mx-auto flex items-center justify-between py-4'>
-                <Div className='w-3/12'>
+                <Div className='w-3/12 px-4'>
                     <Img src={headerData.logo} />
                 </Div>
-                <Div className='w-5/12'>
+                <Div className='w-5/12 px-4'>
                     <List className='flex items-center justify-center gap-5'>
                         {headerData.navItems && headerData.navItems.map((navItem, index) => (
                             <Div key={index}>
@@ -34,8 +34,8 @@ const Header = () => {
                         ))}
                     </List>
                 </Div>
-                <Div className='w-4/12'>
-                    <Div className='flex items-center justify-between gap-3'>
+                <Div className='w-4/12 px-4'>
+                    <Div className='flex items-center justify-end gap-3'>
                         {headerData.buttonOne &&
                             <Button className='py-4 px-9 font-semibold hover:bg-[#3734A9] hover:text-white duration-300 rounded-md'>{headerData.buttonOne.text}</Button>
                         }
